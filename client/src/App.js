@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
-import ChartApp from "./components/Chart";
+import ChartApp from "./components/chart/Chart";
 
 const StyledApp = styled(Box)(({ theme }) => ({
 	backgroundColor: "aliceblue",
