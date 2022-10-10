@@ -1,5 +1,7 @@
 import styled from "@emotion/styled"
 import { Box, Card, Container, Typography, TextField } from "@mui/material"
+import Body from "./Body";
+import Left from "./Left";
 
 const StyledChartApp = styled(Container)(({ theme }) => ({
 	height: "100vh",
@@ -10,39 +12,30 @@ const StyledChartApp = styled(Container)(({ theme }) => ({
 
 const StyledChartCard = styled(Card)(({ theme }) => ({
 	width: "100%",
-	height: "80vh"
+	height: "80vh",
+	display: "flex"
 }));
 
-const StyledHeader = styled(Box)(({ theme }) => ({
-	padding: "5px",
-	borderBottom: "1px solid grey"
+const StyledLeft = styled(Box)(({ theme }) => ({
+	flex: 3,
+	borderRight: "1px solid grey",
 }));
 
 const StyledBody = styled(Box)(({ theme }) => ({
-	padding: "5px",
-}));
-
-const StyledInputSection = styled(Box)(({ theme }) => ({
-	padding: "5px",
+	flex: 9,
 }));
 
 const ChartApp = () => {
 	return (
-		<StyledChartApp>
+		<StyledChartApp maxWidth="xl">
 			<StyledChartCard>
-				<StyledHeader>
-					<Typography variant="h5" color="primary" sx={{fontWeight: "bold"}}>
-						Chart
-					</Typography>
-				</StyledHeader>
+				<StyledLeft>
+					<Left/>
+				</StyledLeft>
 
 				<StyledBody>
-					<div>ChartApp</div>
+					<Body/>
 				</StyledBody>
-
-				<StyledInputSection>
-					
-				</StyledInputSection>
 			</StyledChartCard>
 		</StyledChartApp>
 	)
