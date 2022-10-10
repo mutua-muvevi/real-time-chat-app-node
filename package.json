@@ -1,0 +1,27 @@
+{
+ "name": "real-time-chat-app-node",
+ "version": "1.0.0",
+ "description": "",
+ "main": "server.js",
+ "scripts": {
+  "start": "node server.js"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/mutua-muvevi/real-time-chat-app-node.git"
+ },
+ "author": "",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/mutua-muvevi/real-time-chat-app-node/issues"
+ },
+ "homepage": "https://github.com/mutua-muvevi/real-time-chat-app-node#readme",
+ "dependencies": {
+  "cors": "^2.8.5",
+  "dotenv": "^16.0.3",
+  "express": "^4.18.2",
+  "http": "^0.0.1-security",
+  "mongoose": "^6.6.5",
+  "socket.io": "^4.5.2"
+ }
+}
