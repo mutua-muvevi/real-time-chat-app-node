@@ -48,7 +48,7 @@ app.get("*", (req, res) => {
 })
 
 io.on("connection", () => {
- console.log("a user is connected")
+ console.log("a user is connected successfully lover")
 })
 
 app.listen(PORT, () => {
